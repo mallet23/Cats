@@ -1,0 +1,17 @@
+﻿@model ReturnOnIntelligenceTask.Models.CatViewModel
+
+@{
+    ViewBag.Title = "Cats";
+}
+
+<link href="@Url.Content("~/Content/css/main.css")" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="@Url.Content("~/Scripts/jquery-3.1.1.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/cats-category.js")"></script>
+
+<h2>Cats</h2>
+<div class="categories-filter">
+    @Html.DisplayNameFor(x => x.SelectedCategory)
+    @Html.DropDownListFor(x => x.SelectedCategory, new SelectList(Model.CategoriesNames))
+</div>
+
+<div id="CatImages"></div>

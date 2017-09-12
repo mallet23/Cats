@@ -1,0 +1,9 @@
+﻿.categories-filter {
+    margin-bottom: 10px;
+}
+
+.cat-image {
+    display: block;
+    margin-bottom: 3px;
+    max-width: 100%;
+}
